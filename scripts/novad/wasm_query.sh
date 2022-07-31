@@ -1,0 +1,1 @@
+wasmd query wasm contract-state smart $CONTRACT '{}' $NODE

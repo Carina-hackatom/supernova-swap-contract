@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upload": "node --loader ts-node/esm 01_upload_contract.ts",
+    "create_cw20": "node --loader ts-node/esm 02_create_cw20.ts",
+    "create_pair": "node --loader ts-node/esm 03_create_pair.ts",
+    "test": "node --loader ts-node/esm ./test/test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cosmjs/cli": "^0.28.4",
+    "@cosmjs/cosmwasm-stargate": "^0.28.4",
+    "@cosmjs/proto-signing": "^0.28.4",
+    "@cosmjs/stargate": "^0.28.4",
+    "dotenv": "^16.0.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
