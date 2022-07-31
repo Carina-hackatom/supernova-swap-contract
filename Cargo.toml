@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "packages/*",
+    "contracts/token",
+    "contracts/pair",
+    "contracts/factory",
+]
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = false
+incremental = false
+panic = 'abort'
+overflow-checks = true
